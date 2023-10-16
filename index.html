@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Library</h1>
+    <div id="library-cont">
+
+        <div id="library">
+            
+        </div>
+    </div>
+    <button onClick='showForm()' style="border: none; background-color: green; color: white; font-size: 18px;">New Book</button>
+    <dialog>
+        <form action="">
+            <label for="">Title: </label>
+            <input type="text" id="title"/>
+            <label for="">Author: </label>
+            <input type="text" id="author">
+            <label for="">Pages: </label>
+            <input type="text" id="pages">
+            <label for="">Has been read?: </label>
+            <select name="" id="status">
+                <option value="Has been read">Yes</option>
+                <option value="Not been read" selected="selected">No</option>
+            </select>
+            <button onClick="closeForm()" formmethod="dialog">Submit</button>
+        </form>
+    </dialog>
+</body>
+<script src="script.js"></script>
+</html>
